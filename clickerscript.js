@@ -31,6 +31,9 @@ setInterval(() => {
 function updateClickValDisplay() {
   clickvalcont.innerText = clickVal.toString();
 }
+function updateMultiplierDisplay() {
+  multiplierCount.innerText = multiplier.toString();
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   const clickValDisplay = document.getElementById("clickvalcont");
@@ -107,17 +110,21 @@ setInterval(() => {
 
 // Script untuk upgrade multiplier
 
-function multiplier2() {
+function multiplier2(){
   multiplier = 2;
+  updateMultiplierDisplay()
 }
-function multiplier10() {
+function multiplier10(){
   multiplier = 10;
+  updateMultiplierDisplay()
 }
-function multiplier1000() {
+function multiplier1000(){
   multiplier = 1000;
+  updateMultiplierDisplay()
 }
-function multiplier_default() {
+function multiplier_default(){
   multiplier = 1;
+  updateMultiplierDisplay()
 }
 
 //fitur tambahan
