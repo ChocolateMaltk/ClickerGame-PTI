@@ -20,8 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCashDisplay();
 });
 
+// Biar gak ada angka negatif
+setInterval(() => {
+  if (cash < BigInt(0)) {
+    cash = BigInt(0);
+    updateCashDisplay();
+  }
+}, 100);
+
 function updateClickValDisplay() {
-  clickValDisplay.innerText = clickVal.toString();
+  clickvalcont.innerText = clickVal.toString();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -47,3 +55,54 @@ function generateCash(btn) {
   cash = cash + BigInt(clickVal) * BigInt(multiplier);
   updateCashDisplay();
 }
+
+// Script untuk Upgrade Click Value
+
+function upgradeClickValue(buttonId, requiredCash, newClickVal) {
+  let button = document.getElementById(buttonId);
+  checkCash(requiredCash, button);
+
+  button.onclick = function () {
+    cash -= BigInt(requiredCash);
+    clickVal += newClickVal;
+    updateCashDisplay();
+    updateClickValDisplay();
+    button.disabled = true;
+    button.style.opacity = "0.5";
+    button.style.cursor = "not-allowed";
+  };
+}
+
+function checkCash(requiredCash, button) {
+  if (cash >= BigInt(requiredCash)) {
+    button.disabled = false;
+    button.style.opacity = "1";
+    button.style.cursor = "pointer";
+  } else {
+    button.disabled = true;
+    button.style.opacity = "0.5";
+    button.style.cursor = "not-allowed";
+  }
+}
+
+// Check cv1 button every 500 milliseconds
+setInterval(() => {
+  checkCash(10, cv1);
+}, 500);
+
+// Check cv2 button every 500 milliseconds
+setInterval(() => {
+  checkCash(100, cv2);
+}, 500);
+
+// Check cv3 button every 500 milliseconds
+setInterval(() => {
+  checkCash(1000, cv3);
+}, 500);
+
+// Check cv4 button every 500 milliseconds
+setInterval(() => {
+  checkCash(5000, cv4);
+}, 500);
+
+// Script untuk upgrade multiplier
