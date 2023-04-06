@@ -12,6 +12,10 @@ ANGGOTA KELOMPOK 7 :
 link GitHub : https://github.com/ChocolateMaltk/ClickerGame-PTI.git
 
 How To play?
+Saat Di Laman About
+1. Klik Play untuk pindah halaman.
+
+Saat di Laman Play
 1. Klik logo dolar di tengah halaman.
 2. Klik sepuasnya.
 3. Terdapat multiplier value, klik untuk melimpat-gandakan uang yang akan dihasilkan.
