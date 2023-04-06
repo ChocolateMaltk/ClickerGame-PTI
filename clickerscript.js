@@ -146,11 +146,3 @@ function billion() {
   updateCashDisplay();
   window.alert("Doa Terkabul");
 }
-
-//auto klik
-function autoclik() {
-  for (let i = 0; i < 100; i++) {
-    cash = cash + BigInt(clickVal) * BigInt(multiplier);
-  }
-  updateCashDisplay();
-}
