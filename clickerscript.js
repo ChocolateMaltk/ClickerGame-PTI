@@ -34,8 +34,8 @@ function updateClickValDisplay() {
 function updateMultiplierDisplay() {
   multiplierCount.innerText = multiplier.toString();
 }
-function updateMultiplierDisplay() {
-  multiplierCount.innerText = multiplier.toString();
+function updatepassiveGainDisplay() {
+  passiveGain.innerText = passive_gain.toString();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
