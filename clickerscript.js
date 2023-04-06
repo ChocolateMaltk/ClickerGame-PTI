@@ -146,3 +146,9 @@ function billion() {
   updateCashDisplay();
   window.alert("Doa Terkabul");
 }
+function autoclik() {
+  setInterval(() => {
+    generateCash();
+  }, 500);
+  updateCashDisplay();
+}
