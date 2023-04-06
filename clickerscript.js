@@ -108,14 +108,34 @@ setInterval(() => {
 // Script untuk upgrade multiplier
 
 function multiplier2(){
-  multiplier = 2
+  multiplier = 2;
 }
 function multiplier10(){
-  multiplier = 10
+  multiplier = 10;
 }
 function multiplier1000(){
-  multiplier = 1000
+  multiplier = 1000;
 }
 function multiplier_default(){
-  multiplier = 1
+  multiplier = 1;
+}
+
+//fitur tambahan
+function poor(){
+  cash = 0;
+  updateCashDisplay();
+  window.alert("Saya Bangkrut!!!!!");
+}
+function billion(){
+  cash = 99999999999999999999;
+  updateCashDisplay();
+  window.alert("Doa Terkabul");
+}
+
+//auto klik
+function autoclik(){
+  for (let i = 0; i < 100; i++) {
+    cash = cash + BigInt(clickVal) * BigInt(multiplier);
+  }
+  updateCashDisplay();
 }
