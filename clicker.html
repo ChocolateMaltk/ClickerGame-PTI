@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="head-about">
-      <h1 style="font-family: 'Times New Roman', Times, serif; color: white">Play</h1>
+      <h1 style="font-family: 'Times New Roman', Times, serif; color: white">PLAY CLICKER 7</h1>
       <nav>
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -39,7 +39,7 @@
             <p id="clickvalcont">1</p>
           </div>
           <div class="col-md-3">
-            <p><b>Multiplier</b></p>
+            <p><b>Click Multiplier</b></p>
             <p id="multiplierCount">1</p>
           </div>
           <div class="col-md-3">
@@ -76,18 +76,18 @@
               <h3>Multipliers</h3>
               <div class="row">
                 <div class="col-6">
-                  <button type="button" class="btn btn-primary m-1" onclick="multiplier2()">Upgrade Multiplier by 2</button>
+                  <button type="button" class="btn btn-primary m-1" onclick="multiplier2()">Set Multiplier to 2</button>
                 </div>
                 <div class="col-6">
-                  <button type="button" class="btn btn-primary m-1" onclick="multiplier10()">Upgrade Multiplier by 10</button>
+                  <button type="button" class="btn btn-primary m-1" onclick="multiplier10()">Set Multiplier to 10</button>
                 </div>
               </div>
               <div class="row">
                 <div class="col-6">
-                  <button type="button" class="btn btn-primary m-1" onclick="multiplier1000()">Upgrade Multiplier by 1000</button>
+                  <button type="button" class="btn btn-primary m-1" onclick="multiplier1000()">Set Multiplier to 1000</button>
                 </div>
                 <div class="col-6">
-                  <button type="button" class="btn btn-primary m-1" onclick="multiplier_default()">Default</button>
+                  <button type="button" class="btn btn-primary m-1" onclick="multiplier_default()">Default (1x)</button>
                 </div>
               </div>
             </div>
@@ -102,35 +102,36 @@
         <div class="col-12 col-md-4">
           <!-- 3 columns on small screens, 1 column on medium and above screens -->
           <h2>Buka Cabang</h2>
+          <p>Cari pekerja dari berbagai kota untuk menambahkan passive income!</p>
           <div class="row">
             <div class="col-md-2 mx-2">
-              <button class="btn btn-primary m-3">Jatinangor</button>
+              <button id="ac-1" class="btn btn-primary m-3" onclick="auto_click('ac-1')" data-required-cash="10000" gain="1000" disabled>Jatinangor</button>
             </div>
             <div class="col-md-2 mx-4">
-              <button class="btn btn-primary m-3">Trenggalek</button>
+              <button id="ac-2" class="btn btn-primary m-3" onclick="auto_click('ac-2')" data-required-cash="50000" gain="5000" disabled>Trenggalek</button>
             </div>
           </div>
           <div class="row ">
-            <div class="col-md-2 mx-2">
-              <button class="btn btn-primary m-3">Tangerang Selatan</button>
+            <div  class="col-md-2 mx-2">
+              <button id="ac-3" class="btn btn-primary m-3" onclick="auto_click('ac-3')" data-required-cash="75000" gain="15000" disabled >Tangerang Selatan</button>
             </div>
             <div class="col-md-2 mx-4">
-              <button class="btn btn-primary m-3">Manokwari</button>
+              <button id="ac-4" class="btn btn-primary m-3" onclick="auto_click('ac-4')" data-required-cash="85000" gain="35000" disabled>Manokwari</button>
             </div>
             <div class="row">
               <div class="col-md-2 mx-2">
-                <button class="btn btn-primary m-3">Tokyo</button>
+                <button id="ac-5" class="btn btn-primary m-3" onclick="auto_click('ac-5')" data-required-cash="100000" gain="50000" disabled>Tokyo</button>
               </div>
               <div class="col-md-2 mx-4">
-                <button class="btn btn-primary m-3">Los Angeles</button>
+                <button id="ac-6" class="btn btn-primary m-3" onclick="auto_click('ac-6')" data-required-cash="500000" gain="115000" disabled>Los Angeles</button>
               </div>
             </div>
             <div class="row ">
               <div class="col-md-2 mx-2">
-                <button class="btn btn-primary m-3">Mars</button>
+                <button id = "ac-7" class="btn btn-primary m-3" onclick="auto_click('ac-7')" data-required-cash="1000000" gain="200000" disabled>Mars</button>
               </div>
               <div class="col-md-2 mx-4">
-                <button class="btn btn-primary m-3">Neptunus</button>
+                <button id="ac-8" class="btn btn-primary m-3" onclick="auto_click('ac-8')" data-required-cash="2500000" gain="500000" disabled>Neptunus</button>
               </div>
           </div>
         </div>
@@ -144,7 +145,6 @@
         <div class= "col-12 col-md-9 align-items-center text-center">
           <button class="btn btn-primary m-3" onclick="poor()">Poor me!!!</button>
           <button class="btn btn-primary m-3" onclick="billion()">Pray to GOD for give me money</button>
-          <button class="btn btn-primary m-3" onclick="autoclik()">autoclik</button>
         </div>
       </div>
     </div>
