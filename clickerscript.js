@@ -34,6 +34,9 @@ function updateClickValDisplay() {
 function updateMultiplierDisplay() {
   multiplierCount.innerText = multiplier.toString();
 }
+function updateMultiplierDisplay() {
+  multiplierCount.innerText = multiplier.toString();
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   const clickValDisplay = document.getElementById("clickvalcont");
