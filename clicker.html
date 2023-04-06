@@ -13,11 +13,23 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-9">
-          <!-- 1 big column the width of 3 columns on medium and above screens -->
-          <h1>Nama Game (Clicker seveN)</h1>
-          <p>Cash</p>
-          <p id="cashDisplay">0</p>
+        <div class="row">
+          <div class="col-md-3">
+            <p><b>Cash</b></p>
+            <p id="cashDisplay">0</p>
+          </div>
+          <div class="col-md-3">
+            <p><b>Click Value</b></p>
+            <p id="clickvalcont">1</p>
+          </div>
+          <div class="col-md-3">
+            <p><b>Multiplier</b></p>
+            <p id="multiplierCount">1</p>
+          </div>
+          <div class="col-md-3">
+            <p><b>Passive Gains</b></p>
+            <p id="passiveGain">0</p>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -25,15 +37,43 @@
           <div class="row">
             <div class="col-6">
               <!-- First column, takes up half the width on all screens -->
-              <h3>Upgrades</h3>
-              <p>Menambah Nilai Click</p>
-              <p>Multiplier Click</p>
+              <h3>Click Upgrades</h3>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-primary m-1">Upgrade Click Value</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-primary m-1">Upgrade Click Value</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-primary m-1">Upgrade Click Value</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-primary m-1">Upgrade Click Value</button>
+                </div>
+              </div>
             </div>
             <div class="col-6">
               <!-- Second column, takes up half the width on all screens -->
-              <h3>Stats</h3>
-              <p>Current Click Value: 10</p>
-              <p>Multiplier: 1.5x</p>
+              <h3>Multipliers</h3>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-primary m-1">Upgrade Multiplier</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-primary m-1">Upgrade Multiplier</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-primary m-1">Upgrade Multiplier</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-primary m-1">Upgrade Multiplier</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -45,11 +85,43 @@
         </div>
         <div class="col-12 col-md-4">
           <!-- 3 columns on small screens, 1 column on medium and above screens -->
-          <h2>Passive Upgrades (Nambahin uang tanpa perlu ngeclick)</h2>
+          <h2>Passive Upgrades</h2>
+          <div class="row">
+            <div class="col-md-2 mx-2">
+              <button class="btn btn-primary m-3">Passive Upgrade</button>
+            </div>
+            <div class="col-md-2 mx-4">
+              <button class="btn btn-primary m-3">Passive Upgrade</button>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-2 mx-2">
+              <button class="btn btn-primary m-3">Passive Upgrade</button>
+            </div>
+            <div class="col-md-2 mx-4">
+              <button class="btn btn-primary m-3">Passive Upgrade</button>
+            </div>
+            <div class="row">
+              <div class="col-md-2 mx-2">
+                <button class="btn btn-primary m-3">Passive Upgrade</button>
+              </div>
+              <div class="col-md-2 mx-4">
+                <button class="btn btn-primary m-3">Passive Upgrade</button>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-2 mx-2">
+                <button class="btn btn-primary m-3">Passive Upgrade</button>
+              </div>
+              <div class="col-md-2 mx-4">
+                <button class="btn btn-primary m-3">Passive Upgrade</button>
+              </div>
+          </div>
         </div>
       </div>
+        
       <div class="row">
-        <div class="col-12 col-md-9">
+        <div class="col-12 col-md-9 align-items-center text-center">
           <!-- Same as the 1st column -->
           <h1>Menu buat fitur lainnya</h1>
         </div>

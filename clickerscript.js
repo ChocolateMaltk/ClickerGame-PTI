@@ -20,6 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCashDisplay();
 });
 
+function updateClickValDisplay() {
+  clickValDisplay.innerText = clickVal.toString();
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const clickValDisplay = document.getElementById("clickvalcont");
+  updateClickValDisplay();
+});
+
 // Script untuk Button di tengah.
 
 function grayOutImage(btn) {
