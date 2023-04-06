@@ -106,3 +106,16 @@ setInterval(() => {
 }, 500);
 
 // Script untuk upgrade multiplier
+
+function multiplier2(){
+  multiplier = 2
+}
+function multiplier10(){
+  multiplier = 10
+}
+function multiplier1000(){
+  multiplier = 1000
+}
+function multiplier_default(){
+  multiplier = 1
+}
