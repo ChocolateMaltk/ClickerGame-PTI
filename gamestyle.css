@@ -1,0 +1,9 @@
+/* Ini adalah bagian tengah (Tombol Game)*/
+
+.grayed-out {
+  opacity: 0.5; /* Set opacity to 50% (grayed out) */
+}
+
+.shrinked {
+  transform: scale(0.75); /* Shrink image to 75% */
+}
