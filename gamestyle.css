@@ -7,3 +7,7 @@
 .shrinked {
   transform: scale(0.75); /* Shrink image to 75% */
 }
+
+#multipliers button {
+  font-size: 12px;
+}
