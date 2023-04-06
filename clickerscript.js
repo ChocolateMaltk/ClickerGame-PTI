@@ -40,6 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
   updateClickValDisplay();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const multiplierCount = document.getElementById("multiplierCount");
+  updateMultiplierDisplay();
+});
+
 // Script untuk Button di tengah.
 
 function grayOutImage(btn) {
@@ -110,21 +115,21 @@ setInterval(() => {
 
 // Script untuk upgrade multiplier
 
-function multiplier2(){
+function multiplier2() {
   multiplier = 2;
-  updateMultiplierDisplay()
+  updateMultiplierDisplay();
 }
-function multiplier10(){
+function multiplier10() {
   multiplier = 10;
-  updateMultiplierDisplay()
+  updateMultiplierDisplay();
 }
-function multiplier1000(){
+function multiplier1000() {
   multiplier = 1000;
-  updateMultiplierDisplay()
+  updateMultiplierDisplay();
 }
-function multiplier_default(){
+function multiplier_default() {
   multiplier = 1;
-  updateMultiplierDisplay()
+  updateMultiplierDisplay();
 }
 
 //fitur tambahan
