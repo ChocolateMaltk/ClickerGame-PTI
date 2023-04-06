@@ -87,53 +87,53 @@ function checkCash(requiredCash, button) {
 
 // Check cv1 button every 500 milliseconds
 setInterval(() => {
-  checkCash(10, cv1);
+  checkCash(10, up1);
 }, 500);
 
 // Check cv2 button every 500 milliseconds
 setInterval(() => {
-  checkCash(100, cv2);
+  checkCash(100, up2);
 }, 500);
 
 // Check cv3 button every 500 milliseconds
 setInterval(() => {
-  checkCash(1000, cv3);
+  checkCash(1000, up3);
 }, 500);
 
 // Check cv4 button every 500 milliseconds
 setInterval(() => {
-  checkCash(5000, cv4);
+  checkCash(5000, up4);
 }, 500);
 
 // Script untuk upgrade multiplier
 
-function multiplier2(){
+function multiplier2() {
   multiplier = 2;
 }
-function multiplier10(){
+function multiplier10() {
   multiplier = 10;
 }
-function multiplier1000(){
+function multiplier1000() {
   multiplier = 1000;
 }
-function multiplier_default(){
+function multiplier_default() {
   multiplier = 1;
 }
 
 //fitur tambahan
-function poor(){
-  cash = 0;
+function poor() {
+  cash = BigInt(0);
   updateCashDisplay();
   window.alert("Saya Bangkrut!!!!!");
 }
-function billion(){
-  cash = 99999999999999999999;
+function billion() {
+  cash = BigInt(99999999999999999999);
   updateCashDisplay();
   window.alert("Doa Terkabul");
 }
 
 //auto klik
-function autoclik(){
+function autoclik() {
   for (let i = 0; i < 100; i++) {
     cash = cash + BigInt(clickVal) * BigInt(multiplier);
   }
